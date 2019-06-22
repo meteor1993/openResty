@@ -6,7 +6,7 @@ local i = shared_data:get("i")
 if not i then
   i = 1
   -- 3. 惰性赋值
-  shared_data:set("i": i)
+  shared_data:set("i", i)
   ngx.say("lazy set i ", i, "<br/>")
 end
 -- 递增
